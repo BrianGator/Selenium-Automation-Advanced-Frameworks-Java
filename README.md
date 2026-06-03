@@ -2,9 +2,9 @@
 
 **Written by Brian McCarthy**
 
-This repository is a comprehensive Selenium WebDriver automation showcase focused on **Java, Selenium WebDriver 4, TestNG, Maven, Page Object Model, data-driven testing, framework design, Jenkins CI/CD, Selenium Grid, Chrome DevTools Protocol, Cucumber BDD, Excel utilities, JDBC database validation, cloud execution, API testing, login testing, and technical interview preparation**.
+This repository is a comprehensive Selenium WebDriver automation showcase focused on **Java, Selenium WebDriver 4, TestNG, Maven, Page Object Model, data-driven testing, framework design, Jenkins CI/CD, Selenium Grid, Chrome DevTools Protocol, Cucumber BDD, Excel utilities, JDBC database validation, cloud execution, API testing, login testing, locator strategy, and technical interview preparation**.
 
-The README is organized around the requested 36-chapter Selenium WebDriver course structure, with additional non-duplicate supplemental modules based on the detailed Packt course table of contents. The base modules cover the core course path; the supplemental modules add advanced topics such as Java Streams, Selenium 4 relative locators, CDP network interception, Extent Reports, ThreadLocal, retries, Cucumber, Selenium Grid, BrowserStack/Sauce Labs, JDBC, AutoIT, Excel utilities, API testing, login testing, and framework architecture.
+This README shows module details directly on the page. No module body is hidden behind a click-to-expand arrow.
 
 ---
 
@@ -71,14 +71,11 @@ The README is organized around the requested 36-chapter Selenium WebDriver cours
 
 This repository is organized as an advanced Selenium WebDriver with Java learning and framework-building project. It begins with core Selenium and Java concepts, then advances into locators, waits, WebElements, Actions, windows, iframes, file handling, logging, TestNG, Maven, Page Object Model, Extent Reports, ThreadLocal parallel execution, retries, Cucumber BDD, Selenium Grid, cloud execution, Chrome DevTools Protocol, JDBC database validation, API testing, and CI/CD.
 
-The detailed Packt-style course outline includes 39 expandable table-of-contents sections ranging from Selenium introduction through Cucumber BDD and defect tracking. This README consolidates that content into a non-duplicated 36-module base course plus supplemental modules for unique advanced topics such as Java Streams, Selenium 4 features, Grid, CDP, JDBC, AutoIT, Extent Reports, and Cucumber. fileciteturn45file0
+The detailed Packt-style course outline includes many Selenium Java topics such as locator techniques, advanced XPath/CSS, dropdowns, waits, Ajax, child windows, iframes, JavaScriptExecutor, TestNG, Page Object Model, Extent Reports, Cucumber, Grid, CDP, JDBC, AutoIT, cloud execution, Maven, Java OOP, and Cucumber BDD. This README consolidates those topics into a non-duplicated module guide.
 
 ---
 
 ## Module 1 - Introduction
-
-<details>
-<summary>Get more details for Module 1</summary>
 
 ### What This Module Covers
 
@@ -101,14 +98,9 @@ driver.quit();
 
 Chrome opens, navigates to the site, prints the page title, and closes cleanly.
 
-</details>
-
 ---
 
 ## Module 2 - Setup and Configuration
-
-<details>
-<summary>Get more details for Module 2</summary>
 
 ### What This Module Covers
 
@@ -147,19 +139,14 @@ Chrome opens, navigates to the site, prints the page title, and closes cleanly.
 
 `mvn test` downloads dependencies, compiles tests, and runs the Selenium test suite.
 
-</details>
-
 ---
 
 ## Module 3 - Understanding Variables and Data Types
 
-<details>
-<summary>Get more details for Module 3</summary>
-
 ### What This Module Covers
 
-- Java primitives: `int`, `double`, `boolean`, `char`.
-- Reference types: `String`, objects, collections.
+- Java primitives: `int`, `double`, `boolean`, and `char`.
+- Reference types: `String`, objects, and collections.
 - Variables for URLs, credentials, expected messages, timeouts, browser names, and environment values.
 - String methods used in automation parsing.
 
@@ -181,14 +168,9 @@ Assert.assertFalse(headless);
 
 The test navigates to the URL, verifies the title, and validates basic runtime values.
 
-</details>
-
 ---
 
 ## Module 4 - Advanced Data Types
-
-<details>
-<summary>Get more details for Module 4</summary>
 
 ### What This Module Covers
 
@@ -216,14 +198,9 @@ for (WebElement product : products) {
 
 Only products listed in `expectedProducts` are added to the cart.
 
-</details>
-
 ---
 
 ## Module 5 - Comparison and Boolean Operators
-
-<details>
-<summary>Get more details for Module 5</summary>
 
 ### What This Module Covers
 
@@ -246,14 +223,9 @@ Assert.assertFalse(promoCode.isSelected());
 
 The test confirms the promo code field is disabled and not selected.
 
-</details>
-
 ---
 
 ## Module 6 - Program Control Flow
-
-<details>
-<summary>Get more details for Module 6</summary>
 
 ### What This Module Covers
 
@@ -285,14 +257,9 @@ Assert.assertTrue(productFound);
 
 The test searches through paginated rows until `Rice` is found.
 
-</details>
-
 ---
 
 ## Module 7 - Functions/Methods - Working with Reusable Code
-
-<details>
-<summary>Get more details for Module 7</summary>
 
 ### What This Module Covers
 
@@ -321,14 +288,9 @@ public void type(By locator, String value) {
 
 Page classes and tests can reuse a consistent wait/type pattern instead of repeating code.
 
-</details>
-
 ---
 
 ## Module 8 - Classes and Object-Oriented Programming
-
-<details>
-<summary>Get more details for Module 8</summary>
 
 ### What This Module Covers
 
@@ -367,14 +329,9 @@ public class ProductCataloguePage extends AbstractComponent {
 
 Common waits and shared methods live in the abstract parent class and are inherited by page classes.
 
-</details>
-
 ---
 
 ## Module 9 - Exception Handling
-
-<details>
-<summary>Get more details for Module 9</summary>
 
 ### What This Module Covers
 
@@ -402,14 +359,9 @@ try {
 
 The framework handles click interception safely and gives a meaningful failure if the button is missing.
 
-</details>
-
 ---
 
 ## Module 10 - Modules and Packages
-
-<details>
-<summary>Get more details for Module 10</summary>
 
 ### What This Module Covers
 
@@ -436,14 +388,9 @@ src/test/java/
 
 The framework remains organized, searchable, and scalable as test coverage grows.
 
-</details>
-
 ---
 
 ## Module 11 - Working with Files
-
-<details>
-<summary>Get more details for Module 11</summary>
 
 ### What This Module Covers
 
@@ -468,14 +415,9 @@ String baseUrl = properties.getProperty("baseUrl");
 
 Browser and URL values are loaded from configuration files rather than hardcoded in tests.
 
-</details>
-
 ---
 
 ## Module 12 - How To Inspect Elements On Different Browsers
-
-<details>
-<summary>Get more details for Module 12</summary>
 
 ### What This Module Covers
 
@@ -498,14 +440,9 @@ By dynamicButton = By.xpath("//button[contains(text(),'Submit')]");
 
 Inspectors identify stable locators that can be used reliably in Selenium tests.
 
-</details>
-
 ---
 
 ## Module 13 - Selenium WebDriver Setup and Installation
-
-<details>
-<summary>Get more details for Module 13</summary>
 
 ### What This Module Covers
 
@@ -528,14 +465,9 @@ driver.quit();
 
 Chrome launches, maximizes, opens the app URL, prints the current URL, and quits.
 
-</details>
-
 ---
 
 ## Module 14 - Selenium WebDriver Running Tests on Various Browsers
-
-<details>
-<summary>Get more details for Module 14</summary>
 
 ### What This Module Covers
 
@@ -564,14 +496,9 @@ public class DriverFactory {
 
 The same test suite can run on the browser selected by configuration or Maven parameter.
 
-</details>
-
 ---
 
 ## Module 15 - Selenium WebDriver - Finding Elements
-
-<details>
-<summary>Get more details for Module 15</summary>
 
 ### What This Module Covers
 
@@ -595,14 +522,9 @@ Assert.assertTrue(products.size() > 0);
 
 Login fields are filled, login is submitted, and product cards are located.
 
-</details>
-
 ---
 
 ## Module 16 - Cascading Style Sheets (CSS) Selectors - Advanced Locators
-
-<details>
-<summary>Get more details for Module 16</summary>
 
 ### What This Module Covers
 
@@ -626,14 +548,9 @@ By partialId = By.cssSelector("input[id*='Email']");
 
 CSS selectors locate stable elements by ID, attributes, classes, hierarchy, and partial attribute values.
 
-</details>
-
 ---
 
 ## Module 17 - XPath - Advanced Locators
-
-<details>
-<summary>Get more details for Module 17</summary>
 
 ### What This Module Covers
 
@@ -659,14 +576,9 @@ By parentInput = By.xpath("//label[text()='Email']/parent::div//input");
 
 XPath locators identify elements using text, parent/child relationships, and sibling relationships.
 
-</details>
-
 ---
 
 ## Module 18 - Selenium WebDriver - Working with WebElements
-
-<details>
-<summary>Get more details for Module 18</summary>
 
 ### What This Module Covers
 
@@ -698,14 +610,9 @@ submit.click();
 
 The test selects a dropdown value, validates checkbox count, confirms a button is enabled, and submits the form.
 
-</details>
-
 ---
 
 ## Module 19 - Selenium WebDriver - Useful Methods and Properties
-
-<details>
-<summary>Get more details for Module 19</summary>
 
 ### What This Module Covers
 
@@ -734,14 +641,9 @@ Assert.assertNotNull(href);
 
 Browser window state, page metadata, and link attributes are validated.
 
-</details>
-
 ---
 
 ## Module 20 - Selenium WebDriver - Wait Types
-
-<details>
-<summary>Get more details for Module 20</summary>
 
 ### What This Module Covers
 
@@ -776,14 +678,9 @@ WebElement result = wait.until(d -> d.findElement(By.id("result")));
 
 The test waits for elements to appear, disappear, or become usable without fixed sleeps.
 
-</details>
-
 ---
 
 ## Module 21 - Selenium WebDriver – Advanced Interactions
-
-<details>
-<summary>Get more details for Module 21</summary>
 
 ### What This Module Covers
 
@@ -818,14 +715,9 @@ Assert.assertEquals(sum, displayedTotal);
 
 The table scrolls, all amount values are summed, and the calculated sum matches the displayed total.
 
-</details>
-
 ---
 
 ## Module 22 - Selenium WebDriver - File Upload And Download
-
-<details>
-<summary>Get more details for Module 22</summary>
 
 ### What This Module Covers
 
@@ -856,14 +748,9 @@ WebDriver driver = new ChromeDriver(options);
 
 Selenium uploads the selected file and downloads files into the configured folder.
 
-</details>
-
 ---
 
 ## Module 23 - Selenium WebDriver - Switch Window and iframes
-
-<details>
-<summary>Get more details for Module 23</summary>
 
 ### What This Module Covers
 
@@ -904,14 +791,9 @@ driver.switchTo().defaultContent();
 
 The test switches to the child window or iframe, validates content, and returns to the original context.
 
-</details>
-
 ---
 
 ## Module 24 - Selenium WebDriver - Working with Actions Class
-
-<details>
-<summary>Get more details for Module 24</summary>
 
 ### What This Module Covers
 
@@ -935,14 +817,9 @@ driver.findElement(By.linkText("Top")).click();
 
 The hover menu appears and Selenium clicks the submenu option.
 
-</details>
-
 ---
 
 ## Module 25 - Logging Infrastructure
-
-<details>
-<summary>Get more details for Module 25</summary>
 
 ### What This Module Covers
 
@@ -966,14 +843,9 @@ logger.error("Login failed due to missing dashboard");
 
 Logs provide a readable execution trail for debugging.
 
-</details>
-
 ---
 
 ## Module 26 - TestNG Infrastructure
-
-<details>
-<summary>Get more details for Module 26</summary>
 
 ### What This Module Covers
 
@@ -1005,14 +877,9 @@ public void orderPlacementTest() {
 
 TestNG controls order, dependencies, grouping, and suite execution.
 
-</details>
-
 ---
 
 ## Module 27 - JUnit/Pytest Equivalents for Java
-
-<details>
-<summary>Get more details for Module 27</summary>
 
 ### What This Module Covers
 
@@ -1042,14 +909,9 @@ void teardown() {
 
 JUnit executes setup, test, and teardown around each test case.
 
-</details>
-
 ---
 
 ## Module 28 - Automation Framework - Part 1
-
-<details>
-<summary>Get more details for Module 28</summary>
 
 ### What This Module Covers
 
@@ -1078,14 +940,9 @@ target.findElement(By.cssSelector("button:last-of-type")).click();
 
 The framework selects the target ecommerce product using stream filtering.
 
-</details>
-
 ---
 
 ## Module 29 - Automation Framework - Part 2
-
-<details>
-<summary>Get more details for Module 29</summary>
 
 ### What This Module Covers
 
@@ -1132,14 +989,9 @@ public class LandingPage extends AbstractComponent {
 
 Tests call `loginApplication()` and receive the next page object.
 
-</details>
-
 ---
 
 ## Module 30 - Automation Framework - Part 3
-
-<details>
-<summary>Get more details for Module 30</summary>
 
 ### What This Module Covers
 
@@ -1174,14 +1026,9 @@ public class BaseTest {
 
 The framework launches the browser based on Maven/system properties or global configuration.
 
-</details>
-
 ---
 
 ## Module 31 - Automation Framework Practice Exercise
-
-<details>
-<summary>Get more details for Module 31</summary>
 
 ### What This Module Covers
 
@@ -1212,14 +1059,9 @@ public void submitOrderTest() {
 
 The test performs login, product selection, cart validation, checkout, and confirmation validation.
 
-</details>
-
 ---
 
 ## Module 32 - Data-Driven Testing
-
-<details>
-<summary>Get more details for Module 32</summary>
 
 ### What This Module Covers
 
@@ -1252,14 +1094,9 @@ public void submitOrder(HashMap<String, String> input) {
 
 TestNG runs tests using structured HashMap data.
 
-</details>
-
 ---
 
 ## Module 33 - Running Complete Test Suite
-
-<details>
-<summary>Get more details for Module 33</summary>
 
 ### What This Module Covers
 
@@ -1283,14 +1120,9 @@ mvn clean test -DsuiteXmlFile=testng.xml
 
 The selected suite runs from terminal and generates TestNG/Surefire reports.
 
-</details>
-
 ---
 
 ## Module 34 - Git and GitHub - Version Control System
-
-<details>
-<summary>Get more details for Module 34</summary>
 
 ### What This Module Covers
 
@@ -1316,14 +1148,9 @@ git push -u origin master
 
 Framework source code is version-controlled and available for Jenkins/GitHub integration.
 
-</details>
-
 ---
 
 ## Module 35 - Continuous Integration with Jenkins
-
-<details>
-<summary>Get more details for Module 35</summary>
 
 ### What This Module Covers
 
@@ -1366,14 +1193,9 @@ pipeline {
 
 Jenkins checks out code, runs Maven tests, publishes JUnit results, and archives reports/screenshots/logs.
 
-</details>
-
 ---
 
 ## Module 36 - Conclusion
-
-<details>
-<summary>Get more details for Module 36</summary>
 
 ### Next Steps
 
@@ -1391,14 +1213,9 @@ Jenkins checks out code, runs Maven tests, publishes JUnit results, and archives
 
 The project becomes a complete Java Selenium automation portfolio with enterprise framework skills.
 
-</details>
-
 ---
 
 ## Supplemental Module 37 - Selenium Java Streams for Web Tables
-
-<details>
-<summary>Get more details for Supplemental Module 37</summary>
 
 ### What This Module Covers
 
@@ -1422,14 +1239,9 @@ Assert.assertEquals(originalList, sortedList);
 
 The table column order is compared against a sorted copy to verify sort behavior.
 
-</details>
-
 ---
 
 ## Supplemental Module 38 - Selenium 4.0 Latest Features
-
-<details>
-<summary>Get more details for Supplemental Module 38</summary>
 
 ### What This Module Covers
 
@@ -1455,14 +1267,9 @@ Assert.assertTrue(size.getHeight() > 0);
 
 Selenium 4 locates elements relative to other elements and captures partial element screenshots.
 
-</details>
-
 ---
 
 ## Supplemental Module 39 - Framework Part 4 Test Strategy and Parallel Control
-
-<details>
-<summary>Get more details for Supplemental Module 39</summary>
 
 ### What This Module Covers
 
@@ -1488,14 +1295,9 @@ public String getScreenshot(String testCaseName, WebDriver driver) throws IOExce
 
 Screenshots are saved and can be attached to reports after failures.
 
-</details>
-
 ---
 
 ## Supplemental Module 40 - Framework Part 5 Extent Reports, Listeners, ThreadLocal and Retry
-
-<details>
-<summary>Get more details for Supplemental Module 40</summary>
 
 ### What This Module Covers
 
@@ -1540,14 +1342,9 @@ public class Retry implements IRetryAnalyzer {
 
 Parallel tests avoid WebDriver collisions, failed tests capture report evidence, and selected failures can retry once.
 
-</details>
-
 ---
 
 ## Supplemental Module 41 - Framework Part 6 Maven and Jenkins CI/CD
-
-<details>
-<summary>Get more details for Supplemental Module 41</summary>
 
 ### What This Module Covers
 
@@ -1569,14 +1366,9 @@ mvn clean test -Denv=qa -DsuiteXmlFile=testng.xml
 
 Maven and Jenkins can control browser, environment, suite, and headless settings at runtime.
 
-</details>
-
 ---
 
 ## Supplemental Module 42 - Framework Part 7 Cucumber BDD Wrapper
-
-<details>
-<summary>Get more details for Supplemental Module 42</summary>
 
 ### What This Module Covers
 
@@ -1615,14 +1407,9 @@ public void login(String email, String password) {
 
 Business-readable Gherkin scenarios execute Selenium page object methods.
 
-</details>
-
 ---
 
 ## Supplemental Module 43 - Cross Browser Testing with Selenium Grid and Cloud
-
-<details>
-<summary>Get more details for Supplemental Module 43</summary>
 
 ### What This Module Covers
 
@@ -1647,14 +1434,9 @@ driver.quit();
 
 Tests execute remotely on a Grid node or cloud browser instead of the local machine.
 
-</details>
-
 ---
 
 ## Supplemental Module 44 - Selenium 4 Chrome DevTools Protocol CDP
-
-<details>
-<summary>Get more details for Supplemental Module 44</summary>
 
 ### What This Module Covers
 
@@ -1683,14 +1465,9 @@ driver.get("https://example.com");
 
 Image/CSS requests are blocked, which can speed up test execution or validate degraded network behavior.
 
-</details>
-
 ---
 
 ## Supplemental Module 45 - Database Connection to Selenium Testcases
-
-<details>
-<summary>Get more details for Supplemental Module 45</summary>
 
 ### What This Module Covers
 
@@ -1718,14 +1495,9 @@ connection.close();
 
 The test validates backend database state after a UI or API action.
 
-</details>
-
 ---
 
 ## Supplemental Module 46 - File Uploading AutoIT and Downloading with Selenium
-
-<details>
-<summary>Get more details for Supplemental Module 46</summary>
 
 ### What This Module Covers
 
@@ -1753,8 +1525,6 @@ driver.findElement(By.cssSelector("input[type='file']"))
 ### Expected Result
 
 Basic authentication is bypassed through URL credentials, and file upload works through the file input element when available.
-
-</details>
 
 ---
 
@@ -2017,9 +1787,6 @@ Use the simplest framework that solves the actual problem. Build from scratch on
 
 ## Top 30 Selenium Java Technical Interview Questions
 
-<details open>
-<summary>Click to expand Top 30 interview questions</summary>
-
 ### 1. What is Selenium WebDriver?
 
 Selenium WebDriver is a browser automation API that sends commands to browser drivers such as ChromeDriver, GeckoDriver, and EdgeDriver.
@@ -2178,10 +1945,8 @@ APIs can create test data, authenticate users, validate backend state, and clean
 
 Clear package structure, Page Objects, reusable utilities, explicit waits, configuration management, logs, reports, screenshots, ThreadLocal parallel execution, data-driven tests, and CI/CD integration.
 
-</details>
-
 ---
 
 ## Summary
 
-This README documents a complete advanced Selenium WebDriver with Java course and framework guide. It covers the requested 36 base modules plus non-duplicate supplemental topics drawn from the detailed Packt table of contents: Java Streams, Selenium 4 features, ExtentReports, ThreadLocal, retries, Cucumber BDD, Selenium Grid, Chrome DevTools Protocol, JDBC, AutoIT, cloud execution, API testing, login testing, locator strategy, framework construction, and interview preparation. fileciteturn45file0
+This README documents a complete advanced Selenium WebDriver with Java course and framework guide. It covers the requested 36 base modules plus non-duplicate supplemental topics drawn from the detailed Packt table of contents: Java Streams, Selenium 4 features, ExtentReports, ThreadLocal, retries, Cucumber BDD, Selenium Grid, Chrome DevTools Protocol, JDBC, AutoIT, cloud execution, API testing, login testing, locator strategy, framework construction, and interview preparation.
